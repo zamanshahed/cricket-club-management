@@ -1,0 +1,1 @@
+CREATE TABLE `cricket_club`.`player_history` ( `player_id` INT(10) NOT NULL , `club_name` VARCHAR(150) NOT NULL , `from` DATE NOT NULL , `to` DATE NULL , `total_run` INT(10) NOT NULL , `total_wickets` INT(5) NOT NULL , `team_leader` VARCHAR(3) NOT NULL, PRIMARY KEY (`player_id`) ) ENGINE = InnoDB;

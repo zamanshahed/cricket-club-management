@@ -1,0 +1,1 @@
+CREATE TABLE `cricket_club`.`player_edu` ( `player_id` INT(10) NOT NULL , `deg_name` VARCHAR(20) NOT NULL , `institute_dept` VARCHAR(200) NOT NULL , `board_university` VARCHAR(200) NOT NULL , `year` INT(4) NOT NULL , `result` VARCHAR(15) NOT NULL ) ENGINE = InnoDB;

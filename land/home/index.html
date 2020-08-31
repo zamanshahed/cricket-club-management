@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="animated zoomIn">
+	<head>
+		<title>...WELCOME...</title>
+		<link rel="stylesheet" type="text/css" href="css/animated.css">
+
+		<style type="text/css">
+			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				font-family: Calibri, sans-serif;
+			}
+			.background-wrap {
+				position: fixed;
+				z-index: -1000;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+			}
+			
+			#video-bg-elem {
+				position: absolute;
+				top: 0;
+				left: 0;
+				min-height: 100%;
+				min-width: 100%;
+			}
+			.content {
+				position: absolute;
+				width: 100%;
+				min-height: 100%;
+				z-index: 1000;
+				background-color: rgba(0,0,0,0.4);
+			}
+			.content h1 {
+				text-align: center;
+				font-size: 65px;
+				text-transform: uppercase;
+				font-weight: 300;
+				color: #fff;
+				padding-top: 5%;
+				margin-bottom: 10px;
+			}
+			.content p {
+				text-transform: uppercase;
+				text-align: center;
+				font-size: 20px;
+				letter-spacing: 3px;
+				color: #aaa;
+			}
+			/**
+			*	LOGO_1
+			*/
+
+			.logo {
+			  margin-top: 130px;
+			  bottom: 2px;
+			  left: 44%;
+			  width: 42px;
+			  height: 42px;
+			  margin-left: 100px;/**
+			  box-sizing: border-box;
+			  background-color: white;
+			  border-radius: 50%;**/
+			  transition: -webkit-transform 5ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			  transition: transform 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			  transition: transform 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			}
+			.logo:hover {
+			  -webkit-transform: scale(1.4);
+			          transform: scale(1.4);
+			}
+			.logo img {
+			  width: auto;
+			  height: auto;
+			  margin: 0 auto;
+			}
+
+			/**
+			*	LOGO_2
+			*/
+
+			.logo2 {
+			  margin-top: -42px;
+			  bottom: 2px;
+			  left: 44%;
+			  width: 42px;
+			  height: 42px;
+			  margin-left: 290px;/**
+			  box-sizing: border-box;
+			  background-color: white;
+			  border-radius: 50%;**/
+			  transition: -webkit-transform 5ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			  transition: transform 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			  transition: transform 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			}
+			.logo2:hover {
+			  -webkit-transform: scale(1.4);
+			          transform: scale(1.4);
+			}
+			.logo2 img {
+			  width: auto;
+			  height: auto;
+			  margin: 0 auto;
+			}
+
+			/**
+			*	LOGO_3
+			*/
+			.logo3 {
+			  margin-top: -42px;
+			  margin-left: 475px;
+			  bottom: 2px;
+			  width: 42px;
+			  height: 42px;/**
+			  box-sizing: border-box;
+			  background-color: white;
+			  border-radius: 50%;**/
+			  transition: -webkit-transform 5ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			  transition: transform 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			  transition: transform 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			}
+			.logo3:hover {
+			  -webkit-transform: scale(1.4);
+			          transform: scale(1.4);
+			}
+			.logo3 img {
+			  width: auto;
+			  height: auto;
+			  margin: 0 auto;
+			}
+
+			/**
+			*	LOGO_4
+			*/
+			.logo4 {
+			  margin-top: -42px;
+			  margin-left: 675px;
+			  bottom: 2px;
+			  width: 42px;
+			  height: 42px;/**
+			  box-sizing: border-box;
+			  background-color: white;
+			  border-radius: 50%;**/
+			  transition: -webkit-transform 5ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			  transition: transform 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			  transition: transform 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			}
+			.logo4:hover {
+			  -webkit-transform: scale(1.4);
+			          transform: scale(1.4);
+			}
+			.logo4 img {
+			  width: auto;
+			  height: auto;
+			  margin: 0 auto;
+			}
+
+
+			/**
+			*	LOGO_5
+			*/
+			.logo5 {
+			  margin-top: -42px;
+			  margin-left: 875px;
+			  bottom: 2px;
+			  width: 42px;
+			  height: 42px;/**
+			  box-sizing: border-box;
+			  background-color: white;
+			  border-radius: 50%;**/
+			  transition: -webkit-transform 5ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			  transition: transform 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			  transition: transform 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			}
+			.logo5:hover {
+			  -webkit-transform: scale(1.4);
+			          transform: scale(1.4);
+			}
+			.logo5 img {
+			  width: auto;
+			  height: auto;
+			  margin: 0 auto;
+			}
+
+
+
+			/**
+			*	LOGO_5
+			*/
+			.logo6 {
+			  margin-top: -42px;
+			  margin-left: 1075px;
+			  bottom: 2px;
+			  width: 42px;
+			  height: 42px;/**
+			  box-sizing: border-box;
+			  background-color: white;
+			  border-radius: 50%;**/
+			  transition: -webkit-transform 5ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			  transition: transform 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			  transition: transform 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			}
+			.logo6:hover {
+			  -webkit-transform: scale(1.4);
+			          transform: scale(1.4);
+			}
+			.logo6 img {
+			  width: auto;
+			  height: auto;
+			  margin: 0 auto;
+			}
+
+
+
+
+
+			a {
+				color: white;
+				font-weight: 900;
+				font-size: 20px;
+				text-align: right;
+			}
+			a:link {
+    			text-decoration: none;
+			}
+
+			a:visited {
+			    text-decoration: none;
+			}
+
+			a:hover {
+				color: green;
+			    text-decoration: none;
+			}
+
+			a:active {
+			    text-decoration: none;
+			}
+
+			
+		</style>
+
+
+	</head>
+	
+	<body>
+
+
+
+
+		<div class="background-wrap">
+			<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted"> 
+				<source src="video.mp4" type="video/mp4">
+				Video not supported
+			</video>          
+		</div>
+
+
+		<div class="content">         
+			<h1>Welcome To Cricket Club Database</h1>
+			<p>where performance matters, We do the best</p>
+
+			<div class="logo">
+				<a href="http://127.0.0.1/cc/pl_perform.php" >PL_PERFORM<img src="http://127.0.0.1/land/img/chart/mipmap-xxhdpi/chart.png" alt="GO"></a>
+			</div>
+
+			<div class="logo2">
+				<a href="http://127.0.0.1/cc/contract.php" >CONTRACT<img src="http://127.0.0.1/land/img/cont/mipmap-xxhdpi/contract.png" alt="GO"></a>
+			</div>
+
+			<div class="logo3">
+				<a href="http://127.0.0.1/cc/register1.php" >PL_REGISTER<img src="http://127.0.0.1/land/img/reg/mipmap-xxhdpi/register.png" alt="GO"></a>
+
+			</div>
+			
+			<div class="logo4">
+				<a href="http://127.0.0.1/cc/club_reg.php" >CL_REGISTER<img src="http://127.0.0.1/land/img/reg/mipmap-xxhdpi/register.png" alt="GO"></a>
+			</div>
+			
+			<div class="logo5">
+				<a href="http://127.0.0.1/cc/match_data.php" >M_DATA<img src="http://127.0.0.1/land/img/list/mipmap-xxhdpi/list.png" alt="GO"></a>
+			</div>
+			
+
+			<div class="logo6">
+				<a href="http://127.0.0.1/cc/team_data.php" >T_DATA<img src="http://127.0.0.1/land/img/team/mipmap-xxhdpi/team.png" alt="GO"></a>
+			</div>
+			
+
+
+			</div>
+
+
+
+		</div>
+		
+		
+
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
